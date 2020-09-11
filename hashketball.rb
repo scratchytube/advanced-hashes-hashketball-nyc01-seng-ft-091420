@@ -135,8 +135,7 @@ found_player = get_players.find do |player|
 player[:player_name] == player_name
 end 
 found_player [:shoe]
-
-
+end
 
 
 
