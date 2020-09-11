@@ -131,13 +131,10 @@ end
 
 
 def num_points_scored(player_name)
-game_hash.each do |location, team_data|
-  team_data[:players].each do |player_name, player_stat|
-    if name = player_name
-      return player_stat[:points]
-      end 
-    end
-end
+found_player = get_players.find do |player\
+player[:player_name] == player_name
+end 
+found_player [:shoe]
 end
 
 
